@@ -8,8 +8,10 @@ gcloud builds submit --tag gcr.io/<your gcp project id>/datadog-python-todoapp:v
 2. Deploy the cloudrun app
 gcloud run deploy datadog-python-todoapp --image gcr.io/<your gcp project id>/datadog-python-todoapp:v0.01 --allow-unauthenticated
 
-## 2. Connecting the app with Datadog GCP Integration
-Configure GCP Integration by referring to this [guide](https://docs.datadoghq.com/integrations/google_cloud_platform/). By completing the GCP integration, you can monitor your serverless application under the Datadog Infrastructure -> Serverless menu. 
+## 2. Connecting the app with Datadog GCP Integration for Serverless Observability
+Configure GCP Integration by referring to this [guide](https://docs.datadoghq.com/integrations/google_cloud_platform/). 
+
+By completing the GCP integration, you can monitor your serverless application under the Datadog Infrastructure -> Serverless menu. You can refer to this [introduction](https://www.datadoghq.com/blog/collect-traces-logs-from-cloud-run-with-datadog/) for GCP serverless monitoring introduction. 
 
 ## 3. GCP Serverless Datadog agent implementation for APM 
 1. Datadog APM implementation for GCP Serverless app
@@ -35,6 +37,9 @@ If you check the templates/base.html file, you can replace the RUM clientToken, 
 
 2. Session Replay
 You can enable the session replay. This is already enabled on this todoapp. If you check the templates/base.html file, you can find `window.DD_RUM.startSessionReplayRecording();` --> this is the way to enable the feature. You can refer to this [guide](https://docs.datadoghq.com/real_user_monitoring/session_replay/#usage) for more information.
+
+## 6. Datadog GCP Serverless Monitoring Dashboard
+You can also check sample GCP serverless monitoring dashboards for cloudrun services and refer to this [introduction](https://www.datadoghq.com/blog/google-serverless-application-monitoring-datadog/).
 
 
 

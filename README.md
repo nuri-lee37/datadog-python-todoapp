@@ -39,7 +39,7 @@ If you check the templates/base.html file, you can replace the RUM clientToken, 
 You can enable the session replay. This is already enabled on this todoapp. If you check the templates/base.html file, you can find `window.DD_RUM.startSessionReplayRecording();` --> this is the way to enable the feature. You can refer to this [guide](https://docs.datadoghq.com/real_user_monitoring/session_replay/#usage) for more information.
 
 ### 6. Datadog GCP Serverless Monitoring Dashboard
-You can also check sample GCP serverless monitoring dashboards for cloudrun services and refer to this [introduction](https://www.datadoghq.com/blog/google-serverless-application-monitoring-datadog/).
+You can also check sample GCP serverless monitoring dashboards for cloudrun services. Please refer to this [introduction](https://www.datadoghq.com/blog/google-serverless-application-monitoring-datadog/).
 
 
 

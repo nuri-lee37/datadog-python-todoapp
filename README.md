@@ -6,7 +6,7 @@ This is a todoapp which consists of python flask web framework, gcp cloudrun and
 
 ### 1. Build GCP cloudrun app
 1. Build the app docker image
-gcloud builds submit --tag gcr.io/<your gcp project id>/datadog-python-todoapp:v0.01
+`gcloud builds submit --tag gcr.io/<your gcp project id>/datadog-python-todoapp:v0.01`
 
 2. Deploy the cloudrun app
 gcloud run deploy datadog-python-todoapp --image gcr.io/<your gcp project id>/datadog-python-todoapp:v0.01 --allow-unauthenticated

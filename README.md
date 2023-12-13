@@ -9,7 +9,7 @@ This is a todoapp which consists of python flask web framework, gcp cloudrun and
 `gcloud builds submit --tag gcr.io/<your gcp project id>/datadog-python-todoapp:v0.01`
 
 2. Deploy the cloudrun app
-gcloud run deploy datadog-python-todoapp --image gcr.io/<your gcp project id>/datadog-python-todoapp:v0.01 --allow-unauthenticated
+`gcloud run deploy datadog-python-todoapp --image gcr.io/<your gcp project id>/datadog-python-todoapp:v0.01 --allow-unauthenticated`
 
 ### 2. Connecting the app with Datadog GCP Integration for Serverless Observability
 Configure GCP Integration by referring to this [guide](https://docs.datadoghq.com/integrations/google_cloud_platform/). 

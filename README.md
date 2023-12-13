@@ -50,6 +50,12 @@ You can enable the session replay. This is already enabled on this todoapp. If y
 ### 6. Datadog GCP Serverless Monitoring Dashboard
 You can also check sample GCP serverless monitoring dashboards for cloudrun services. Please refer to this [introduction](https://www.datadoghq.com/blog/google-serverless-application-monitoring-datadog/).
 
+##### Reference:
+
+[Python flask todoapp](https://www.python-engineer.com/posts/flask-todo-app/)
+
+[Datadog Serverless Documentation](https://docs.datadoghq.com/serverless/)
+
 
 
 

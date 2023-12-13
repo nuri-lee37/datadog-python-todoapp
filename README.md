@@ -18,9 +18,11 @@ By completing the GCP integration, you can monitor your serverless application u
 
 ### 3. GCP Serverless Datadog agent implementation for APM 
 1. Datadog APM implementation for GCP Serverless app
-The app Dockerfile already contains the serverless application APM integration part. You can refer to this [guide](https://docs.datadoghq.com/serverless/google_cloud_run)
+
+The app [Dockerfile](https://github.com/nuri-lee37/datadog-python-todoapp/blob/main/Dockerfile) already contains the serverless application APM integration part. You can refer to this [guide](https://docs.datadoghq.com/serverless/google_cloud_run)
 
 2. Unified Service Taggig
+
 You can change `DD_ENV` and `DD_SERVICE` from the Dockerfile. The unified service tagging consists of env, service and version that you can customize. You can refer to this [guide](https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/?tab=docker)
 
 ### 4. GCP Log integration with Datadog
@@ -36,9 +38,11 @@ resource.labels.location = "asia-northeast3")
 
 ### 5. Datadog RUM Browser SDK integration
 1. RUM browser sdk cdn-sync method
+
 If you check the templates/base.html file, you can replace the RUM clientToken, applicationId and service based on your RUM application. Here, the app uses the CDN sync method for RUM. You can refer to this [guide](https://docs.datadoghq.com/real_user_monitoring/browser/#cdn-sync)
 
 2. Session Replay
+
 You can enable the session replay. This is already enabled on this todoapp. If you check the templates/base.html file, you can find `window.DD_RUM.startSessionReplayRecording();` --> this is the way to enable the feature. You can refer to this [guide](https://docs.datadoghq.com/real_user_monitoring/session_replay/#usage) for more information.
 
 ### 6. Datadog GCP Serverless Monitoring Dashboard

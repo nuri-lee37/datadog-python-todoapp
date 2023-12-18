@@ -23,7 +23,7 @@ By completing the GCP integration, you can monitor your serverless application u
 
 The app [Dockerfile](https://github.com/nuri-lee37/datadog-python-todoapp/blob/main/Dockerfile) already contains the serverless application APM integration part. You can refer to this [guide](https://docs.datadoghq.com/serverless/google_cloud_run)
 
-2. Unified Service Taggig
+2. Unified Service Tagging
 
 You can change `DD_ENV` and `DD_SERVICE` from the Dockerfile. The unified service tagging consists of env, service and version that you can customize. You can refer to this [guide](https://docs.datadoghq.com/getting_started/tagging/unified_service_tagging/?tab=docker)
 
@@ -52,9 +52,9 @@ You can also check sample GCP serverless monitoring dashboards for cloudrun serv
 
 #### Reference:
 
-[Python Flask Todo App](https://www.python-engineer.com/posts/flask-todo-app/)
-
 [Datadog Serverless Documentation](https://docs.datadoghq.com/serverless/)
+
+[Python Flask Todo App](https://www.python-engineer.com/posts/flask-todo-app/)
 
 
 
